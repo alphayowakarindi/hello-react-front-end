@@ -3,7 +3,7 @@ import randomGreetingReducer from './greeting/randomGreeting';
 
 const store = configureStore({
   reducer: {
-    randomGreeting: randomGreetingReducer
+    randomGreeting: randomGreetingReducer,
   },
 });
 export default store;
