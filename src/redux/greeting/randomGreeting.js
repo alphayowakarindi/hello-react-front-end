@@ -1,6 +1,6 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 // Actions
-const LOAD = 'hello-rails-react/randomGreeting/LOAD';
+const LOAD = 'hello-react-front-end/randomGreeting/LOAD';
 
 // Api
 const url = 'http://127.0.0.1:4000/api/v1/random-greeting';
@@ -11,6 +11,7 @@ export const fetchRandomGreeting = createAsyncThunk(
   async () => {
     const response = await fetch(url);
     const data = await response.json();
+    console.log(data);
     return data;
   },
 );
