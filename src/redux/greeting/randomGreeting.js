@@ -3,7 +3,7 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 const LOAD = 'hello-rails-react/randomGreeting/LOAD';
 
 // Api
-const url = 'http://127.0.0.1:3000/api/random-greeting';
+const url = 'http://127.0.0.1:4000/api/v1/random-greeting';
 
 // Redux thunks
 export const fetchRandomGreeting = createAsyncThunk(
